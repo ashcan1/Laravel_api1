@@ -25,6 +25,7 @@ class CreateAnswersTable extends Migration
             $table->foreignId('thread_id')
             ->constrained()
             ->onDelete('cascade');
+            
             $table->timestamps();
         });
     }
